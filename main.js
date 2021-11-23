@@ -4,8 +4,10 @@ function getBooksFromLocalStorage() {
   return books == null ? [] : books;
 }
 
+let books = getBooksFromLocalStorage();
+
 function setBooksToLocalStorage() {
-  localStorage.setItem('books', JSON.stringify(books))
+  localStorage.setItem('books', JSON.stringify(books));
   return books;
 }
 
@@ -68,5 +70,4 @@ document.addEventListener('click', (e) => {
   }
 });
 
-var books = getBooksFromLocalStorage();
 displayBooks();
