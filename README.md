@@ -1,61 +1,29 @@
-# AwesomeBooksJs
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# AwesomeBooksJs
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+> A Basic website that allows users to add/remove books from a list. Using JavaScript objects and arrays will dynamically modify the DOM and add basic events.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML & CSS
+- JavaScript
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+## Install
+From your terminal enter the following in order :  
+ - `git clone https://github.com/od-c0d3r/AwesomeBooksJs.git`
+ - `cd AwesomeBooksJs`
+ - Open the directory in your code editor, if you use `VScode` enter : `code .`
 
 ## Authors
 
-👤 **Author1**
+👤 **Omar R.**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@od-c0d3r](https://github.com/od-c0d3r)
+- LinkedIn: [omarrashad](https://linkedin.com/in/omarrashad)
 
 ## 🤝 Contributing
 
@@ -66,12 +34,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 

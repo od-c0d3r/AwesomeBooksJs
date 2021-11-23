@@ -1,68 +1,67 @@
-var books = 
-    [{
-        title: "Lord of the rings",
-        author: "J. R. R. Tolkien",
-    },
-    {
-        title: "Harry Potter : Half-Blood Prince",
-        author: "J. K. Rowling",
-    },
-    {
-        title: "A Game of Thrones",
-        author: "George R. R. Martin",
-    }];
+/* eslint-disable no-restricted-syntax */
+
+localStorage.books = JSON.stringify([]);
 
 function displayBooks() {
-    const container = document.getElementById('container')
-    container.innerHTML = "";
-    for (let book of books) {
-        let title = document.createElement('p');
-        let author = document.createElement('p');
-        let removeBtn = document.createElement('button');
-        removeBtn.setAttribute("data-id", books.indexOf(book))
-        removeBtn.innerText = 'Remove';
+  const container = document.getElementById('container');
+  container.innerHTML = '';
 
-        title.innerHTML = book.title;
-        author.innerHTML = book.author;
-
-        container.append(title, author, removeBtn)
+  const books = JSON.parse(localStorage.books);
+  if (books.length === 0) {
+    container.innerHTML = 'Shelf is empty 🙄❗';
+  } else {
+    for (const book of books) {
+      const title = document.createElement('p');
+      const author = document.createElement('p');
+      const removeBtn = document.createElement('button');
+      removeBtn.setAttribute('data-id', books.indexOf(book));
+      removeBtn.innerText = 'Remove';
+      title.innerHTML = book.title;
+      author.innerHTML = book.author;
+      container.append(title, author, removeBtn);
     }
+  }
 }
 
 function removeBook(id) {
-    books.splice(id, 1);
-    displayBooks()
-    return books;
+  const books = JSON.parse(localStorage.books);
+  books.splice(id, 1);
+  localStorage.books = JSON.stringify(books);
+  displayBooks();
+  return books;
 }
 
 function createBook(title, author) {
-    const book = {}
-    book.id = books.length;
-    book.title = title;
-    book.author = author;
-    book.remove = removeBook;
+  const books = JSON.parse(localStorage.books);
+  const book = {};
+  book.id = books.length;
+  book.title = title;
+  book.author = author;
+  book.remove = removeBook;
 
-    books.push(book);
-    return books
+  books.push(book);
+  localStorage.books = JSON.stringify(books);
+  displayBooks();
+  return books;
 }
 
-document.addEventListener("submit", (e)=> {
-    const form = e.target
-    const title = document.getElementById("titleInput").value;
-    const author = document.getElementById("authorInput").value;
-    createBook(title, author);
-    
-    // To clear the form fields after submission
-    form.reset()
-    e.preventDefault()
-})
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+  const title = document.getElementById('titleInput').value;
+  const author = document.getElementById('authorInput').value;
+  createBook(title, author);
 
-document.addEventListener("click", (e)=> {
-    if (e.target.innerText == 'Remove') {
-        const id = e.target.getAttribute("data-id");
-        removeBook(id)
-    }
-    e.preventDefault()
-})
+  // To clear the form fields after submission
+  form.reset();
+  e.preventDefault();
+});
 
-displayBooks()
+document.addEventListener('click', (e) => {
+  if (e.target.innerText === 'Remove') {
+    const id = e.target.getAttribute('data-id');
+    removeBook(id);
+    e.preventDefault();
+  }
+});
+
+displayBooks();
