@@ -1,12 +1,18 @@
 /* eslint-disable no-restricted-syntax */
+function getBooksFromLocalStorage() {
+  const books = JSON.parse(localStorage.getItem('books'));
+  return books == null ? [] : books;
+}
 
-localStorage.books = JSON.stringify([]);
+function setBooksToLocalStorage() {
+  localStorage.setItem('books', JSON.stringify(books))
+  return books;
+}
 
 function displayBooks() {
   const container = document.getElementById('container');
   container.innerHTML = '';
 
-  const books = JSON.parse(localStorage.books);
   if (books.length === 0) {
     container.innerHTML = 'Shelf is empty 🙄❗';
   } else {
@@ -24,23 +30,21 @@ function displayBooks() {
 }
 
 function removeBook(id) {
-  const books = JSON.parse(localStorage.books);
   books.splice(id, 1);
-  localStorage.books = JSON.stringify(books);
+  setBooksToLocalStorage();
   displayBooks();
   return books;
 }
 
 function createBook(title, author) {
-  const books = JSON.parse(localStorage.books);
   const book = {};
   book.id = books.length;
   book.title = title;
   book.author = author;
   book.remove = removeBook;
-
   books.push(book);
-  localStorage.books = JSON.stringify(books);
+
+  setBooksToLocalStorage();
   displayBooks();
   return books;
 }
@@ -64,4 +68,5 @@ document.addEventListener('click', (e) => {
   }
 });
 
+var books = getBooksFromLocalStorage();
 displayBooks();
