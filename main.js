@@ -4,7 +4,7 @@ function getBooksFromLocalStorage() {
   return books == null ? [] : books;
 }
 
-let books = getBooksFromLocalStorage();
+const books = getBooksFromLocalStorage();
 
 function setBooksToLocalStorage() {
   localStorage.setItem('books', JSON.stringify(books));
