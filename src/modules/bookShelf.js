@@ -34,7 +34,7 @@ export default class BookShelf {
         removeBtn.setAttribute('data-id', books.indexOf(book));
         removeBtn.innerText = 'Remove';
         rowBtn.innerHTML = removeBtn.outerHTML;
-        tableRow.append(rowData, rowBtn)
+        tableRow.append(rowData, rowBtn);
         container.append(tableRow);
       });
     }

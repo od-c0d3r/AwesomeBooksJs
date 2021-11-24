@@ -7,8 +7,7 @@ table {
 
 td,
 th {
-  border: 2px solid #dddddd;
-  text-align: cen;
+  border: 2px solid #ddd;
   padding: 8px;
 }
 
@@ -28,7 +27,7 @@ form {
   position: relative;
 }
 
-form>* {
+form > * {
   padding: 5px;
   margin-bottom: 5px;
 }
