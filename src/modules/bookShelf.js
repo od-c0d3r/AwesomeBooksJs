@@ -19,21 +19,23 @@ export default class BookShelf {
   }
 
   displayBooks() {
-    const container = document.getElementById('container');
+    const container = document.getElementById('table');
     container.innerHTML = '';
 
     if (this.books.length === 0) {
       container.innerHTML = 'Shelf is empty 🙄❗';
     } else {
       this.books.forEach((book, index, books) => {
-        const title = document.createElement('p');
-        const author = document.createElement('p');
+        const tableRow = document.createElement('tr');
+        const rowData = document.createElement('td');
+        const rowBtn = document.createElement('td');
         const removeBtn = document.createElement('button');
+        rowData.innerText = `"${book.title}" by ${book.author}`;
         removeBtn.setAttribute('data-id', books.indexOf(book));
         removeBtn.innerText = 'Remove';
-        title.innerHTML = book.title;
-        author.innerHTML = book.author;
-        container.append(title, author, removeBtn);
+        rowBtn.innerHTML = removeBtn.outerHTML;
+        tableRow.append(rowData, rowBtn)
+        container.append(tableRow);
       });
     }
   }
