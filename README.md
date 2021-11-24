@@ -3,7 +3,9 @@
 
 # AwesomeBooksJs
 
-> A Basic website that allows users to add/remove books from a list. Using JavaScript objects and arrays will dynamically modify the DOM and add basic events.
+> Milestone 1 : A Basic website that allows users to add/remove books from a list. Using JavaScript objects and arrays will dynamically modify the DOM and add basic events.
+
+> Milestone 2 : Refactor the application to use JavaScript classes.
 
 ## Built With
 
