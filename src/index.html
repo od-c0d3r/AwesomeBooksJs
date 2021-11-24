@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>AwesomeBooksJs v1.2.0</title>
 </head>
-<body>
-    <h1>📚 AwesomeBooksJs 📚</h1>
-    <hr>
-    <main id="container">
 
+<body>
+    <main>
+        <h1>📚 AwesomeBooksJs 📚</h1>
+        <hr style="width: 150px;">
+        <table id="table">
+        </table>
+        <hr style="width: 150px;">
+        <h1> ➕ Add new book ?</h1>
+        <form id="form" action="">
+            <input type="text" name="title" id="titleInput" placeholder="📖 Enter book title" required>
+            <input type="text" name="author" id="authorInput" placeholder="✍️ Enter author name" required>
+            <button type="submit" id="addBookBtn">➕ Add book</button>
+        </form>
     </main>
-    <hr>
-    <form id="form" action="">
-        <input type="text" name="title" id="titleInput" placeholder="📖 Enter book title" required>
-        <input type="text" name="author" id="authorInput" placeholder="✍️ Enter author name" required>
-        <button type="submit" id="addBookBtn">➕ Add book</button>
-    </form>
     <script type="module" src="./main.js"></script>
 </body>
+
 </html>

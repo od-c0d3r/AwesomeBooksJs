@@ -7,6 +7,8 @@
 
 > Milestone 2 : Refactor the application to use JavaScript classes.
 
+> Milestone 3 : Used medium-fidelity wireframes to create a the UI.
+
 ## Built With
 
 - HTML & CSS

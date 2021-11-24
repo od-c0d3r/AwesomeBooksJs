@@ -1,3 +1,40 @@
-* {
-  margin: auto;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 600px;
+  text-align: center;
+}
+
+td,
+th {
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form > * {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#addBookBtn {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  bottom: -35px;
 }
