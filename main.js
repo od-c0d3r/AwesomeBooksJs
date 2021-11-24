@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax */
 function getBooksFromLocalStorage() {
   const books = JSON.parse(localStorage.getItem('books'));
   return books == null ? [] : books;
@@ -18,7 +17,7 @@ function displayBooks() {
   if (books.length === 0) {
     container.innerHTML = 'Shelf is empty 🙄❗';
   } else {
-    for (const book of books) {
+    books.forEach((book, index, books) => {
       const title = document.createElement('p');
       const author = document.createElement('p');
       const removeBtn = document.createElement('button');
@@ -27,7 +26,7 @@ function displayBooks() {
       title.innerHTML = book.title;
       author.innerHTML = book.author;
       container.append(title, author, removeBtn);
-    }
+    });
   }
 }
 
