@@ -2,7 +2,10 @@
 
 import BookShelf from './modules/bookShelf.js';
 
-const { DateTime } = require("luxon");
+var DateTime = luxon.DateTime;
+const time = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+document.getElementById('time').innerHTML = time ;
+
 
 const listPage = document.getElementById("listPage");
 const formPage = document.getElementById("formPage");
