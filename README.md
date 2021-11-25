@@ -11,41 +11,35 @@
 
 > Milestone 4 : Convert into a fully functional website. refactored the project to add three new sections on top of the two sections we have already completed.
 
-<div style="float:right;">
+<img align="right" src="src/imgs/index.jpeg" style="width:300px;">
 
-## Screenshot
-
-<img src="src/imgs/index.jpeg" style="width:300px;">
-
-</div>
-
-## Built With
+### Built With
 
 - HTML & CSS
 - JavaScript
 
-## Install
+### Install
 - From your terminal enter the following in order :  
   - `git clone https://github.com/od-c0d3r/AwesomeBooksJs.git`
   - `code AwesomeBooksJs`
 
-## Authors
+### Authors
 
 👤 **Omar R.**
 
 - GitHub: [@od-c0d3r](https://github.com/od-c0d3r)
 - LinkedIn: [omarrashad](https://linkedin.com/in/omarrashad)
 
-## 🤝 Contributing
+### 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+### Show your support
 
 Give a ⭐️ if you like this project!
 
-## 📝 License
+### 📝 License
 
 This project is [MIT](./MIT.md) licensed.
