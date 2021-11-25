@@ -19,8 +19,7 @@
 ## Install
 From your terminal enter the following in order :  
  - `git clone https://github.com/od-c0d3r/AwesomeBooksJs.git`
- - `cd AwesomeBooksJs`
- - Open the directory in your code editor, if you use `VScode` enter : `code .`
+ - `code AwesomeBooksJs`
 
 ## Authors
 
