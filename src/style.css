@@ -15,6 +15,10 @@ a:hover{
   border-bottom: 1px solid salmon;
 }
 
+.a-fouces {
+  color: salmon;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -59,10 +63,14 @@ main {
   align-items: center; 
 }
 
-#listPage, #formPage, #contactPage {
+.list-page, .form-page, .contact-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.display-none {
+  display: none;
 }
 
 /* header */

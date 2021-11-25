@@ -17,21 +17,21 @@
         <a id="logo" href="#">📚 AwesomeBooksJs 📚</a>
         <nav>
             <ul>
-                <li><a href="#">List</a></li>
-                <li><a href="#">Add new</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a id="listLink"href="#">List</a></li>
+                <li><a id="formLink" href="#">Add new</a></li>
+                <li><a id="contactLink" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article id="listPage">
+        <article id="listPage" class="list-page">
             <h1>AwesomeBooksJs</h1>
             <table id="table">
             </table>
         </article>
 
-        <article id="formPage">
+        <article id="formPage" class="form-page display-none">
             <h1> Add new book ➕ </h1>
             <form id="form" action="">
                 <input type="text" name="title" id="titleInput" placeholder="📖 Enter book title" required>
@@ -40,18 +40,18 @@
             </form>
         </article>
 
-        <article id="contactPage">
+        <article id="contactPage" class="contact-page display-none">
             <h1>Contacnt information</h1>
             <p> Hey reach out and ask about how to be a great web developer !!</p>
             <ul>
-                <li>- Github : <a href="http://github.com/0d-c0d3r"> Omar</a>
+                <li>- Github : <a href="http://github.com/od-c0d3r"> Omar</a>
                 </li>
             </ul>
         </article>
     </main>
 
     <footer>
-        <a href="http://github.com/0d-c0d3r">© Omar</a>
+        <a target="_blank" href="http://github.com/od-c0d3r">© Microvesr | Omar</a>
     </footer>
 
     <script type="module" src="./main.js"></script>
