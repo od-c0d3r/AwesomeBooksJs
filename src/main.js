@@ -19,4 +19,6 @@ document.addEventListener('click', (e) => {
     app.removeBook(id);
     e.preventDefault();
   }
+  console.log(e.target)
+
 });
