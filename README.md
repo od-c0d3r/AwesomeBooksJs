@@ -9,18 +9,25 @@
 
 > Milestone 3 : Used medium-fidelity wireframes to create a the UI.
 
+> Milestone 4 : Convert into a fully functional website. refactored the project to add three new sections on top of the two sections we have already completed.
+
+<div style="float:right;">
+
+## Screenshot
+
+<img src="src/imgs/index.jpeg" style="width:300px;">
+
+</div>
+
 ## Built With
 
 - HTML & CSS
 - JavaScript
 
-## Getting Started
-
 ## Install
-From your terminal enter the following in order :  
- - `git clone https://github.com/od-c0d3r/AwesomeBooksJs.git`
- - `cd AwesomeBooksJs`
- - Open the directory in your code editor, if you use `VScode` enter : `code .`
+- From your terminal enter the following in order :  
+  - `git clone https://github.com/od-c0d3r/AwesomeBooksJs.git`
+  - `code AwesomeBooksJs`
 
 ## Authors
 

@@ -6,23 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <title>AwesomeBooksJs v1.2.0</title>
 </head>
 
 <body>
+    <header>
+        <a id="logo" href="#">📚 AwesomeBooksJs 📚</a>
+        <nav>
+            <ul>
+                <li><a id="listLink"href="#">List</a></li>
+                <li><a id="formLink" href="#">Add new</a></li>
+                <li><a id="contactLink" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <span id="time"></span>
     <main>
-        <h1>📚 AwesomeBooksJs 📚</h1>
-        <hr style="width: 150px;">
-        <table id="table">
-        </table>
-        <hr style="width: 150px;">
-        <h1> ➕ Add new book ?</h1>
-        <form id="form" action="">
-            <input type="text" name="title" id="titleInput" placeholder="📖 Enter book title" required>
-            <input type="text" name="author" id="authorInput" placeholder="✍️ Enter author name" required>
-            <button type="submit" id="addBookBtn">➕ Add book</button>
-        </form>
+        <article id="listPage" class="list-page">
+            <h1>AwesomeBooksJs</h1>
+            <table id="table">
+            </table>
+        </article>
+
+        <article id="formPage" class="form-page display-none">
+            <h1> Add new book ➕ </h1>
+            <form id="form" action="">
+                <input type="text" name="title" id="titleInput" placeholder="📖 Enter book title" required>
+                <input type="text" name="author" id="authorInput" placeholder="✍️ Enter author name" required>
+                <button type="submit" id="addBookBtn">➕ Add book</button>
+            </form>
+        </article>
+
+        <article id="contactPage" class="contact-page display-none">
+            <h1>Contacnt information</h1>
+            <p> Hey reach out and ask about how to be a great web developer !!</p>
+            <ul>
+                <li>- Github : <a href="http://github.com/od-c0d3r"> Omar</a>
+                </li>
+            </ul>
+        </article>
     </main>
+
+    <footer>
+        <a target="_blank" href="http://github.com/od-c0d3r">© Microvesr | Omar</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
     <script type="module" src="./main.js"></script>
 </body>
 
