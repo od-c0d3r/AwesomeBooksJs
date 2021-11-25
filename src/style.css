@@ -16,6 +16,7 @@ tr:nth-child(even) {
 }
 
 main {
+  font-family: 'Coming Soon', cursive;
   display: flex;
   align-items: center;
   flex-direction: column;
